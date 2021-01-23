@@ -1,0 +1,5 @@
+#ignore DS_Store files and virtual env
+.DS_Store
+microc_dove_env/
+docs/build/
+docs/source/_templates/

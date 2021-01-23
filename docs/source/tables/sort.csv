@@ -1,0 +1,3 @@
+﻿Parameter,Function
+--tmpdir,Provide a full path to a temp directory. A good rule of thumb is to have a space available for this directory at a volume of x3 of the overall volume of the fastq.gz files. Using a temp directory will help avoid memory issues
+--nproc,Number of processes to split the sorting work

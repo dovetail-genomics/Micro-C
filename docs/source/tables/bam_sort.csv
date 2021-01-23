@@ -1,0 +1,4 @@
+﻿Parameter,Function
+-@,number of threads to use
+-o,ile name. Write final output to FILE rather than standard output
+-T,path to temp file. Using a temp file will help avoiding memory issues

@@ -1,0 +1,3 @@
+﻿Parameter,Function
+--mark-dups,"If specified, duplicate pairs are marked as DD in ""pair_type"" and as a duplicate in the sam entries"
+--output-stats,"Output file for duplicate statistics. Please note that if a file with the same name already exists, it will be opened in the append mode"

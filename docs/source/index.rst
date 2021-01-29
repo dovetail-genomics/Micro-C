@@ -28,9 +28,9 @@ Overview
   - Highest signal-to-noise data with both enrichment of long-range informative reads and nucleosome protected fragments
   - The ability to detect higher-order features, such as chromatin loops, in proximity ligation data is dependent on enriching long-range informative reads to capture chromatin interaction frequency. The increased chromosome conformation informative reads combined with ultra-high-resolution improves loop calling compared to RE-based methods.
   
-- If you are using the Micro-C protocol as part of the Dovetail™ HiChIP MNase solution, please reffer to our page xxxxx for further instructions.
+- If you are using the Micro-C protocol as part of the Dovetail™ HiChIP MNase solution, please reffer to our `HiChIP page <https://hichip.readthedocs.io/en/latest/>`_ for further instructions.
 
-- This guide will take you step by step on how to QC your Micro-C library, how to interparate the QC results and how to generate :ref:`contact maps <CONTACTMAP>`. If you don't yet have a sequenced Micro-C library and you want to get familiar with the data, you can download Micro-C sequences libraries from our publicaly available :ref:`data sets<DATASETS>`.
+- This guide will take you step by step on how to QC your Micro-C library, how to interparate the QC results and how to generate :ref:`contact maps <GCM>`. If you don't yet have a sequenced Micro-C library and you want to get familiar with the data, you can download Micro-C sequences libraries from our publicaly available :ref:`data sets<DATASETS>`.
 
 - The QC process starts with aligning the reads to a reference genome then retaining high quality mapped reads. From there the mapped data will be used to generating a pairs file with pairtools, which categorizes pairs by read type and insert distance, this step both flags and removes PCR duplicates. Once pairs are categorized, counts of each class are summed and reported.
 
@@ -40,7 +40,9 @@ Overview
 
    <iframe src="https://player.vimeo.com/video/431456105" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
+.. raw:: html
 
+   <iframe src="https://player.vimeo.com/video/470724936" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 .. toctree::
    :maxdepth: 2

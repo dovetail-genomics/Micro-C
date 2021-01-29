@@ -11,6 +11,7 @@ To download one of the data sets, simply use the wget command:
    wget https://s3.amazonaws.com/dovetail.pub/HiC/fastqs/MicroC_100M_R1.fastq
    wget https://s3.amazonaws.com/dovetail.pub/HiC/fastqs/MicroC_100M_R2.fastq
  
+For testing purposes, we recommend using the 2M reads data sets, for any other purpose we recommend using the 800M reads data set.
 
 +---------------------+-------------------------------------------------------------------------+
 | Library             | Link                                                                    |

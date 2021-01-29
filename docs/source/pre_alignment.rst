@@ -22,6 +22,8 @@ For downstream steps you will need a genome file, genome file is a tab delimited
 
 Faidx will index the ref file and create <ref.fasta>.fai on the reference directory.
 
+.. _GENOME:
+
 2. Use the index file to generate the genome file by printing the first two columns into a new file.
 
 **Command:**

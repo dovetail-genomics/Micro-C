@@ -1,10 +1,10 @@
 ﻿Parameter,Alignment function
 mem,"set the bwa to use the BWA-MEM algorithm, a fast and accurate alignment algorithm optimized for sequences in the range of 70bp to 1Mbp"
--5,"for split alignment, take the alignment with the smallest coordinate (5' end) as primary, the mapq assignment of the primary alignment is calculated independent of the 3' alignment"
--S,skip mate rescue
--P,skip pairing; mate rescue performed unless -S also in use
--T0,"The T flag set the minimum mapping quality of alignments to output, at this stage we want all the alignments to be recorded and thus T is set up to 0, (this will allow us to gather full stats of the library, at later stage we will filter the alignments by mapping quality"
--t,"number of threads, default is 1. Set the numbers of threads to not more than the number of cores that you have on your machine (If you don'd know the number of cores, used the command lscpu and multiply Thread(s) per core x Core(s) per socket x Socket(s))"
-*.fasta or *.fa,"Path to a reference file, ending with .fa or .fasta, e,g, hg38.fasta"
-*.fastq or *.fastq.gz,"Path to two fastq files; path to read 1 fastq file, followed by fastq file of read 2 (usually labeled as R1 and R2, respectively). Files can be in their compressed format (.fastq.gz) or uncompressed (.fastq). In case your library sequence is divided to multiple fastq files, you can use a process substitution < with the cat command (see example below)"
--o,sam file name to use for output results [stdout]. You can choose to skip the -o flag if you are piping the output to the next command using '|'
+\-5,"for split alignment, take the alignment with the smallest coordinate (5' end) as primary, the mapq assignment of the primary alignment is calculated independent of the 3' alignment"
+\-S,skip mate rescue
+\-P,skip pairing; mate rescue performed unless -S also in use
+\-T0,"The T flag set the minimum mapping quality of alignments to output, at this stage we want all the alignments to be recorded and thus T is set up to 0, (this will allow us to gather full stats of the library, at later stage we will filter the alignments by mapping quality"
+\-t,"number of threads, default is 1. Set the numbers of threads to not more than the number of cores that you have on your machine (If you don'd know the number of cores, used the command lscpu and multiply Thread(s) per core x Core(s) per socket x Socket(s))"
+\*.fasta or \*.fa,"Path to a reference file, ending with .fa or .fasta, e,g, hg38.fasta"
+\*.fastq or \*.fastq.gz,"Path to two fastq files; path to read 1 fastq file, followed by fastq file of read 2 (usually labeled as R1 and R2, respectively). Files can be in their compressed format (.fastq.gz) or uncompressed (.fastq). In case your library sequence is divided to multiple fastq files, you can use a process substitution < with the cat command (see example below)"
+\-o,sam file name to use for output results [stdout]. You can choose to skip the -o flag if you are piping the output to the next command using '|'

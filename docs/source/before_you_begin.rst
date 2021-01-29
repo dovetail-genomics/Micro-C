@@ -26,10 +26,9 @@ Make sure that the following dependencies are installed:
 - `pandas <https://pandas.pydata.org/pandas-docs/stable/dsintro.html>`_
 - `bwa <https://github.com/lh3/bwa>`_
 - `pairtools <https://github.com/open2c/pairtools>`_
-- `preseq <http://smithlabresearch.org/software/preseq/>`_
 - `samtools <https://github.com/samtools/samtools>`_
 
-If you are facing any issues with the installation of any of the dependencies, please contact the supporter of the package.
+If you are facing any issues with the installation of any of the dependencies, please contact the supporter of the relevant package.
 
 python3 and pip3 are required, if you don't already have them installed, you will need sudo privileges.
 

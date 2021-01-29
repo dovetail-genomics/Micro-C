@@ -5,5 +5,5 @@ max-inter-align-gap,30,"In cases where there is a gap between alignments, if the
 nproc-in,"integer, e.g. 16","pairtools has an automatic-guess function to identify the format of the input file, whether it is compressed or not. When needed, the input is decompressed by bgzip/lz4c. The option nproc-in set the number of processes used by the auto-guessed input decompressing command, if not specified, default is 3"
 nproc-out,"integer, e.g. 16","pairtools automatic-guess the desired format of the output file (compressed or not compressed, based on file name extension). When needed, the output is compressed by bgzip/lz4c. The option nproc-out set the number of processes used by the auto-guessed output compressing command, if not specified, default is 8"
 chroms-path,,"path to .genome file, e.g. hg38.genome"
-*.sam,,path to sam file used as an input. If you are piping the input (stdin) skip this option
-*pairsam,,name of pairsam file for writing output results. You can choose to skip and pipe the output directly to the next commad (pairtools sort)
+\*.sam,,path to sam file used as an input. If you are piping the input (stdin) skip this option
+\*pairsam,,name of pairsam file for writing output results. You can choose to skip and pipe the output directly to the next commad (pairtools sort)

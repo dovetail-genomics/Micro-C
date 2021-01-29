@@ -1,0 +1,8 @@
+﻿Parameter,Function
+\-Xmx16000m,"The flag Xmx specifies the maximum memory allocation pool for a Java virtual machine, from our experience 16000m works well when processing human data sets, you can increase the allocated memory if needed."
+Djava.awt.headless=true,"Java is ran in a headless mode when the application does not interact with a user (if not specified, the default is Djava.awt.headless=false)"
+pre,The pre command allows users to create .hic files from their own data
+\--threads,Specifies the numbers of threads to be used (integer number)
+\*.pairs or \*.pairs.gz,input file for generating the contact matrix
+\*.genome,"genome file, listing the chromosomes and their sizes"
+\*.hic,"hic output file, containing the contact matrix"

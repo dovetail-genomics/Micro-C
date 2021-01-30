@@ -40,7 +40,7 @@ Faidx will index the ref file and create <ref.fasta>.fai on the reference direct
    cut -f1,2 hg38.fasta.fai > hg38.genome
 
 
-Inline with the 4DN project guidelines and from our own experience optimal alignment results are obtained with Burrows-Wheeler Aligner (bwa).
+In line with the 4DN project guidelines and from our own experience optimal alignment results are obtained with Burrows-Wheeler Aligner (bwa).
 Prior to alignment, generate a bwa index file for the chosen reference.
 
 
@@ -59,7 +59,7 @@ Prior to alignment, generate a bwa index file for the chosen reference.
 
 No need to specify an output path, the bwa index files are automatically generated at the reference directory. Please note that this step is time consuming, however you need to run it only once for a reference. 
 
-To avoid memory issues, some of the steps require writting temporary files into a temp folder, please generate a temp folder and remember its full path. Temp files may take up to x3 of the space that the fastq.gz files are taking, that is, if the total volume of the fastq files is 5Gb, make sure that the temp folder can store at least 15Gb.
+To avoid memory issues, some of the steps require writing temporary files into a temp folder, please generate a temp folder and remember its full path. Temp files may take up to x3 of the space that the fastq.gz files are taking, that is, if the total volume of the fastq files is 5Gb, make sure that the temp folder can store at least 15Gb.
 
 **Command:**
 

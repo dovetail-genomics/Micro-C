@@ -64,13 +64,13 @@ The :ref:`.pairs<GPB>` file that you generated in the :ref:`From fastq to final 
 
 .. code-block:: console
 
-   java -Xmx16000m  -Djava.awt.headless=true -jar <path_to_juicer_tools.jar> pre --threads <no_of_threads> <mapped.pairs> <contact-map.hic> <ref.genome>
+   java -Xmx<memory>  -Djava.awt.headless=true -jar <path_to_juicer_tools.jar> pre --threads <no_of_threads> <mapped.pairs> <contact-map.hic> <ref.genome>
 
 **Example:**
 
 .. code-block:: console
 
-   java -Xmx16000m  -Djava.awt.headless=true -jar ./Micro-C/juicer_tools_1.22.01.jar pre --threads 16 mapped.pairs contact_map.hic hg38.genome
+   java -Xmx48000m  -Djava.awt.headless=true -jar ./Micro-C/juicertools.jar pre --threads 16 mapped.pairs contact_map.hic hg38.genome
 
 
 .. admonition:: Tip no.2

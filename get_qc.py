@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-# usage get_qc.py -p <stats.txt> -d <HiChip.preseq>
 
 import argparse
 from tabulate import tabulate
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-p', help="Pairtools stat output")
-parser.add_argument('-d', help="preseq report output")
 
 args = parser.parse_args()
 
@@ -60,12 +58,6 @@ cis_gt10kb = int(output_dict["cis_10kb+"])
 percent_cis_gt10kb = round(cis_gt10kb*100.0/nodup_reads,2)
 cis_gt10kb = format(cis_gt10kb,",d")
 table.append(["No-Dup Cis Read Pairs >= 10kb", cis_gt10kb, f"{percent_cis_gt10kb}%"])
-with open(args.d,'r') as f:
-    for line in f:
-        attrs = line.split()
-        if attrs[0] == "300000000.0":
-            uniq = int(float(attrs[1]))
-            uniq = format(uniq,",d")
-            table.append(["Expected unique pairs at 300M sequencing", uniq, "NA"])
+        
 
 print(tabulate(table,  tablefmt="plain"))

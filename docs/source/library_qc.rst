@@ -57,7 +57,7 @@ If you preformed a shallow sequencing experiment (e.g. 2M reads) and running a Q
 The `lc_extrap` utility of the `preseq` package aims to predict the complexity of sequencing libraries. 
 
 
-``pairtools parse`` options:
+``preseq`` options:
 
 
 .. csv-table::

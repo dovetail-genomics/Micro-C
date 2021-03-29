@@ -1,0 +1,7 @@
+﻿"Parameter	",Value,Function
+bam,,Specifies that the input file type is bam. Please note that for a bam file to be a recognized input file htslib sould be installed as well and preseq should be built with htslib support (for more details see preseq documentation or our installDep.sh script as example)
+pe,,Specifies that paired end data is used
+extrap,2.10E+09,Maximum extrapolation
+step,1.00E+08,Extrapolation step size
+seg_len,1000000000,maximum segment length when merging paired end bam
+output,,output file

@@ -27,6 +27,7 @@ Make sure that the following dependencies are installed:
 - `bwa <https://github.com/lh3/bwa>`_
 - `pairtools <https://github.com/open2c/pairtools>`_
 - `samtools <https://github.com/samtools/samtools>`_
+- `preseq <https://github.com/smithlabcode/preseq>`_
 
 If you are facing any issues with the installation of any of the dependencies, please contact the supporter of the relevant package.
 

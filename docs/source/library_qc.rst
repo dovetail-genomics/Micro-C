@@ -47,3 +47,44 @@ After the script completes, it will print:
 We consider a library prepared from a **mammalian** sample to be acceptable if:
 - Mapped nondupe pairs cis > 1,000 bp is greater than 20% of the total mapped nondupe pairs.
  
+
+
+Library Complexity
+==================
+
+If you preformed a shallow sequencing experiment (e.g. 2M reads) and running a QC analysis to decide which library to use for deep sequencing (DS), it is recommended to evaluate the complexity of the library before moving to DS. 
+
+The `lc_extrap` utility of the `preseq` package aims to predict the complexity of sequencing libraries. 
+
+
+``pairtools parse`` options:
+
+
+.. csv-table::
+   :file: tables/preseq.csv
+   :header-rows: 1
+   :widths: 20 20 60
+   :class: tight-table
+
+
+``preseq lc_extrap`` command example for extrapolating library complexity:
+
+**Command:**
+
+.. code-block:: console
+
+  preseq lc_extrap -bam -pe -extrap 2.1e9 -step 1e8 -seg_len 1000000000 -output <output file> <input bam file>
+
+
+**Example:**
+
+.. code-block:: console
+
+   preseq lc_extrap -bam -pe -extrap 2.1e9 -step 1e8 -seg_len 1000000000 -output out.preseq mapped.PT.bam
+
+
+In this example the output file `out.preseq` will detail the extrapolated complexity curve of your library, with the number of reads in the first column and the expected distinct read value in the second column. For a typical experiment (human sample) check the expected complexity at 300M reads (to show the content of the file, type **cat out.preseq**). Expected unique pairs at 300M sequencing is at least ~ 120 million. 
+
+.. image:: /images/preseq.png
+
+ 

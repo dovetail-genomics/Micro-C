@@ -44,11 +44,6 @@ After the script completes, it will print:
 
 
 
-We consider a library prepared from a **mammalian** sample to be acceptable if:
-- Mapped nondupe pairs cis > 1,000 bp is greater than 20% of the total mapped nondupe pairs.
- 
-
-
 Library Complexity
 ==================
 

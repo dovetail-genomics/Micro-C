@@ -229,7 +229,7 @@ As mentioned above, we will use the ``cload pairix`` utility of ``Cooler`` to ge
 
 .. code-block:: console
 
-  cooler cload -p 16 pairix hg38.genome:1000 mapped.pairs.gz matrix_1kb.cool
+  cooler cload pairix -p 16 hg38.genome:1000 mapped.pairs.gz matrix_1kb.cool
 
 
 

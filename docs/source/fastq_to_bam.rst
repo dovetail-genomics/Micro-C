@@ -52,7 +52,7 @@ Now that you have a genome file, index file and a reference fasta file you are a
    :class: tight-table
 
 
-Bwa mem will output a sam file that you can either pipe or save to a path using -o option, as in the example below:
+Bwa mem will output a sam file that you can either pipe or save to a path using -o option, as in the example below (please note that version 0.7.17 or higher should be used, older versions do not support the `-5` flag)
 
 **Command:**
 
@@ -72,7 +72,7 @@ Bwa mem will output a sam file that you can either pipe or save to a path using 
 
 .. code-block:: console
 
-   bwa mem -5SP -T0 -t16 hg38.fasta <(cat file1.R1.fastq.gz file2.R1.fastq.gz file3.R1.fastq.gz) <(file1.R2.fastq.gz file2.R2.fastq.gz file3.R2.fastq.gz) -o aligned.sam
+   bwa mem -5SP -T0 -t16 hg38.fasta <(zcat file1.R1.fastq.gz file2.R1.fastq.gz file3.R1.fastq.gz) <(zcat file1.R2.fastq.gz file2.R2.fastq.gz file3.R2.fastq.gz) -o aligned.sam
 
 
 

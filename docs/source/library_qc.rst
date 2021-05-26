@@ -61,6 +61,7 @@ The `lc_extrap` utility of the `preseq` package aims to predict the complexity o
    :widths: 20 20 60
    :class: tight-table
 
+Please note that the input bam file should be a version prior to dups removal.
 
 ``preseq lc_extrap`` command example for extrapolating library complexity:
 

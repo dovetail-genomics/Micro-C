@@ -58,6 +58,8 @@ Overview
 
    contact_map
 
+   microc_compare
+
    conf_analysis
    
    data_sets
